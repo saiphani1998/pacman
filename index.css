@@ -1,0 +1,54 @@
+canvas {
+    border: solid 1px #000000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 580px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.upDiv {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.leftDiv {
+    grid-row: 2;
+}
+
+.rightDiv {
+    grid-row: 2;
+}
+
+.downDiv {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+@media screen and (min-width: 480px) {
+    .grid-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        display: grid;
+        width: 85%;
+    }
+
+    canvas {
+        width: 90%;
+    }
+}

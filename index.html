@@ -4,16 +4,19 @@
 <head>
     <title>PacMan</title>
     <link rel="icon" type="image/png" href="icon.png" />
-    <style>
-        canvas {
-            border: solid 1px #000000;
-        }
+    <link rel="stylesheet" type="text/css" href="index.css">
     </style>
 </head>
 
 <body>
-    <!-- <canvas id="canvasBox" width="600" height="600"></canvas> -->
     <script src="./index.js"> </script>
+    <script src="./button.js"> </script>
+    <div class="grid-container">
+        <button class="grid-item upDiv" id="upButton" onmousedown="moveUp()" onmouseup="out()"> Up </button>
+        <button class="grid-item leftDiv" id="leftButton" onmousedown="moveLeft()" onmouseup="out()">Left</button>
+        <button class="grid-item rightDiv" id="rightButton" onmousedown="moveRight()" onmouseup="out()">Right</button>
+        <button class="grid-item downDiv" id="downButton" onmousedown="moveDown()" onmouseup="out()">Down</button>
+    </div>
 </body>
 
 </html>
