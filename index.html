@@ -13,10 +13,11 @@
     <script src="./index.js"> </script>
     <script src="./button.js"> </script>
     <div class="grid-container">
-        <button class="grid-item upDiv" id="upButton" onmousedown="moveUp()" onmouseup="out()"> Up </button>
-        <button class="grid-item leftDiv" id="leftButton" onmousedown="moveLeft()" onmouseup="out()">Left</button>
-        <button class="grid-item rightDiv" id="rightButton" onmousedown="moveRight()" onmouseup="out()">Right</button>
-        <button class="grid-item downDiv" id="downButton" onmousedown="moveDown()" onmouseup="out()">Down</button>
+        <!-- <button class="grid-item upDiv" id="upButton" onmousedown="moveUp()" onmouseup="out()"> Up </button> -->
+        <button class="grid-item upDiv" id="upButton" onclick="moveUp()"> Up </button>
+        <button class="grid-item leftDiv" id="leftButton" onclick="moveLeft()">Left</button>
+        <button class="grid-item rightDiv" id="rightButton" onclick="moveRight()">Right</button>
+        <button class="grid-item downDiv" id="downButton" onclick="moveDown()">Down</button>
     </div>
 </body>
 
